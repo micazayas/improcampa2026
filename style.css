@@ -251,7 +251,7 @@ article { scroll-margin-top: 17vh; }
   flex-direction: column;
   flex: 1;
   min-width: 0;
-  row-gap: 3rem;
+  row-gap: 2rem;
 }
 
 .hero__script-wrapper {
@@ -263,7 +263,7 @@ article { scroll-margin-top: 17vh; }
 .hero__script-title {
   font-family: "Grand Hotel", cursive;
   display: inline-block;
-  transform: rotate(-13deg) translateX(10%);
+  transform: rotate(-13deg) translateX(-25%);
   font-size: clamp(48px, 7vw, 110px);
   color: var(--blue-color);
   line-height: 1.1;
@@ -278,6 +278,7 @@ article { scroll-margin-top: 17vh; }
   line-height: 1.30;
   text-transform: uppercase;
   animation: hero-fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
+  align-items: center;
 }
 
 .hero__photo-wrap {
@@ -723,14 +724,27 @@ article { scroll-margin-top: 17vh; }
 .info-table__row {
   border-bottom: 2px solid var(--white-color);
   padding: 15px;
-  text-align: center;
-  color: var(--text-color);
+
+}
+
+.info-table__text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 24px;
+    color: var(--text-color);
+    line-height: 1.5;
 }
 
 .info-table__row h3 {
   font-family: "Boldonse", system-ui;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
+  text-align: center;
+  color: var(--blue-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Boldonse", system-ui;
 }
 
 .info-table__row:last-child { border-bottom: none; }
@@ -794,7 +808,7 @@ article { scroll-margin-top: 17vh; }
   text-transform: uppercase;
   display: flex;
   font-family: "Boldonse", system-ui;
-  font-size: 28px;
+  font-size: 24px;
   gap: 10px;
   justify-content: space-between;
   align-items: center;
@@ -859,7 +873,7 @@ article { scroll-margin-top: 17vh; }
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   min-height: 70svh;
-  padding: 100px 40px;
+  padding: 0px 40px 100px;
   align-items: center;
   max-width: 1600px;
   margin: 0 auto;
@@ -1051,6 +1065,7 @@ article { scroll-margin-top: 17vh; }
 
 @media (max-width: 768px) {
   .footer__main { grid-template-columns: 1fr; margin: 1rem; }
+  .footer__col,.footer__socials,.footer__nav{align-items: center;}
   .footer__col--center {
     border-left: none;
     border-right: none;

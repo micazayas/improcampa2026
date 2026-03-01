@@ -77,7 +77,7 @@ class SiteFooter extends HTMLElement {
               <a href="index.html" class="footer__nav-link">Home</a>
               <a href="info.html" class="footer__nav-link">Info</a>
               <a href="workshops.html" class="footer__nav-link">Workshops</a>
-              <a href="faqs.html" class="footer__nav-link">FAQs</a>
+              <a href="info.html#faqs" class="footer__nav-link">FAQs</a>
               <a href="registration.html" class="footer__nav-link">Registrarse</a>
             </nav>
           </div>
