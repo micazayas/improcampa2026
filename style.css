@@ -510,6 +510,20 @@ article { scroll-margin-top: 17vh; }
   }
 }
 
+@media (max-width: 768px) {
+  .stack-cards__item {
+  height: 70vw;
+}
+
+.stack-cards {
+    grid-template-rows: none; 
+    gap: none; 
+
+}
+}
+
+
+
 /* ── PAGE HEADING — h1 unificado (estilo "Registrate") ───────
    Uso: <h1 class="page-heading">Texto</h1>
    Modificador grande: class="page-heading page-heading--lg"
