@@ -510,16 +510,20 @@ article { scroll-margin-top: 17vh; }
   }
 }
 
+.stack-cards__item:nth-child(1) { --index: 1; }
+.stack-cards__item:nth-child(2) { --index: 2; }
+.stack-cards__item:nth-child(3) { --index: 3; }
+.stack-cards__item:nth-child(4) { --index: 4; }
+
 @media (max-width: 768px) {
+  .stack-cards {
+    grid-template-rows: repeat(4, 70vw);
+    gap: 4vw;
+  }
   .stack-cards__item {
-  height: 70vw;
-}
-
-.stack-cards {
-    grid-template-rows: none; 
-    gap: none; 
-
-}
+    height: 70vw;
+    top: 60px;
+  }
 }
 
 
